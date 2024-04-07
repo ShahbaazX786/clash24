@@ -3,22 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { CheckboxModule } from 'primeng/checkbox';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RippleModule } from 'primeng/ripple';
+import { FeatureModule } from './feature/feature/feature.module';
+import { LayoutModule } from './layout/layout/layout.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    ButtonModule,
-    CheckboxModule,
+    LayoutModule,
+    FeatureModule,
     FormsModule,
-    RippleModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
