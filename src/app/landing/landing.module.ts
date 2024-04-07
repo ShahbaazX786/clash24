@@ -6,5 +6,6 @@ import { FeatureModule } from '../feature/feature/feature.module';
 @NgModule({
   declarations: [HeroComponent],
   imports: [CommonModule, FeatureModule],
+  exports:[HeroComponent]
 })
 export class LandingModule {}
